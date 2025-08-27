@@ -1,0 +1,11 @@
+services:
+  react-primer:
+    build: .
+    container_name: react-primer
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "12346:5173" # host:container (React/Vite dev server)
+      - "24678:24678" # Vite HMR
+    command: bash -lc "sleep infinity"
