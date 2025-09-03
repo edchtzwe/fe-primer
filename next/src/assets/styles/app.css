@@ -1,0 +1,6 @@
+@theme {
+  --color-brand: #5252ff;
+  --screen-3xl: 1920px;
+}
+
+@import "tailwindcss";
