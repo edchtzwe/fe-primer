@@ -1,0 +1,9 @@
+services:
+  next-primer:
+    build:
+      context: .
+    container_name: next-primer
+    volumes:
+      - ./:/app
+    ports:
+      - "11223:3000"
